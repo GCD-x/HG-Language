@@ -1,0 +1,22 @@
+[DEFINITIONS]
+    Title ::= "[Title:" string "]"
+    Image ::= "[Image:" string "]"
+    List ::= "[List]" {ListItem}+ "[/List]"
+    ListItem ::= "- " string
+    Text ::= "[Text:" string "]"
+    Quote ::= "[Quote:" string "]"
+    Table ::= "[Table]" {TableRow}+ "[/Table]"
+    TableRow ::= "|" string "|" string "|"
+    Link ::= "[Link:" string "]" "(" string ")"
+    Button ::= "[Button:" string "]" "(" string ")"
+    Color ::= "[Color:" string "]"
+    Box ::= "[Box:" integer "," integer "," string "]"
+    Rectangle ::= "[Rectangle:" integer "," integer "," string "]"
+    Blog ::= "[Blog]" {Article}+ "[/Blog]"
+    Article ::= "[Article]" Title Content "[Button:" string "]" "[/Article]"
+    Content ::= "Content:" string
+    Style ::= "[Style:" string "]"
+    Script ::= "[Script:" string "]"
+    Gallery ::= "[Gallery]" {Image}+ "[/Gallery]"
+    Image ::= "[Image:" string "]"
+    Map ::= "[Map:" string "]"
