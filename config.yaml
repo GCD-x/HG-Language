@@ -1,78 +1,71 @@
+ # ملف تكوين لغة HG
 
-2. **ملف تكوين اللغة (باستخدام HG):**
+# إعدادات اللغة
+language:
+  name: HG
+  version: 1.0
+  author: APMSHAP 
+  description: A powerful and advanced programming language for building sophisticated applications.
 
-```plaintext
-[HOME_HG]
-[BODY:
-    [HEADER_HG:
-        [TEXT_HG: Welcome to Advanced HG Language]
-        [DESIGNS_HG:
-            font-family: 'Roboto', sans-serif;
-            font-size: 48px;
-            color: #FF0000; /* Red color */
-            text-align: center;
-            padding: 50px 0;
-            background-color: #FFFF00; /* Yellow color */
-            border-bottom: 2px solid #ccc;
-        ]
-    ]
-    [ARTICLE_HG:
-        [TITLE_HG: Feature 1]
-        [CONTENT_HG: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]
-        [BUTTON_HG: Learn More](#)
-        [CODE_HG: JavaScript]
-            function handleClick() {
-                alert("Button clicked!");
-            }
-        [/CODE_HG]
-        [DESIGNS_HG:
-            background-color: #fff;
-            padding: 40px;
-            margin-top: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            color: #FFFF00; /* Yellow color */
-        ]
-    ]
-    [ARTICLE_HG:
-        [TITLE_HG: Feature 2]
-        [CONTENT_HG: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]
-        [BUTTON_HG: Learn More](#)
-        [GALLERY_HG:
-            [IMAGE_HG: image1.jpg]
-            [IMAGE_HG: image2.jpg]
-            [IMAGE_HG: image3.jpg]
-        ]
-        [CODE_HG: Python]
-            def greet(name):
-                return "Hello, " + name + "!"
-        [/CODE_HG]
-        [MAP_HG: location]
-        [DESIGNS_HG:
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: #FFFF00; /* Yellow color */
-        ]
-    ]
-    [FOOTER_HG:
-        [TEXT_HG: © 2025 Advanced HG Language. All rights reserved.]
-        [LINK_HG: Privacy Policy](#)
-        [LINK_HG: Terms of Service](#)
-        [DESIGNS_HG:
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px 0;
-            background-color: #333;
-            color: #fff;
-        ]
-    ]
-    [SCRIPT_HG:
-        // Add custom JavaScript code here
-        function handleClick() {
-            alert("Button clicked!");
-        }
-    ]
-]
+# إعدادات التنسيق
+formatting:
+  font_family: 'Roboto, sans-serif'
+  font_size: 16px
+  font_color: '#333333'
+  background_color: '#F0F0F0'
+  border_color: '#CCCCCC'
+  border_radius: 5px
+  box_shadow: '0 0 10px rgba(0, 0, 0, 0.1)'
+  text_align: left
+
+# إعدادات البيئة
+environment:
+  development:
+    name: Development Environment
+    description: Setting up the development environment for Advanced HG Language.
+    tools:
+      - name: Node.js
+        version: 14.x
+        description: JavaScript runtime for building server-side and networking applications.
+      - name: Cloud Storage
+        description: Cloud-based storage for hosting applications and data.
+      - name: Text Editor
+        description: A text editor for writing HG code, such as Visual Studio Code or Sublime Text.
+
+# مكتبة الوظائف
+libraries:
+  - name: math
+    functions:
+      - name: add
+        description: Add two numbers together.
+      - name: subtract
+        description: Subtract one number from another.
+
+# إعدادات التشغيل
+execution:
+  entry_point: main.hg
+  command: python run.py
+
+# إعدادات الترجمة
+translation:
+  enabled: true
+  languages:
+    - name: Arabic
+      code: ar
+    - name: Spanish
+      code: es
+
+# إعدادات الأمان
+security:
+  firewall:
+    enabled: true
+    rules:
+      - name: AllowHTTP
+        port: 80
+        protocol: TCP
+        action: ALLOW
+      - name: AllowHTTPS
+        port: 443
+        protocol: TCP
+        action: ALLOW
+        
