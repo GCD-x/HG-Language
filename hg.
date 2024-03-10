@@ -1,0 +1,172 @@
+!HG:
+    STYLES:
+        FONT: "Roboto, sans-serif"
+        FONT_SIZE: "16px"
+        FONT_COLOR: "#333333"
+        BACKGROUND_COLOR: "#F0F0F0"
+        BORDER_COLOR: "#CCCCCC"
+        BORDER_RADIUS: "5px"
+        BOX_SHADOW: "0 0 10px rgba(0, 0, 0, 0.1)"
+        TEXT_ALIGN: "left"
+
+    COMPONENTS:
+        - TYPE: "header"
+          CONTENT: "« Welcome to Advanced HG Language »"
+          STYLES:
+              FONT_SIZE: "32px"
+              FONT_WEIGHT: "bold"
+              TEXT_ALIGN: "center"
+              PADDING: "20px"
+              BACKGROUND_COLOR: "#336699"
+              COLOR: "#FFFFFF"
+              BORDER_RADIUS: "5px 5px 0 0"
+
+        - TYPE: "sidebar"
+          TITLE: "« Menu »"
+          ITEMS:
+              - TEXT: "Home"
+                URL: "/"
+              - TEXT: "About"
+                URL: "/about"
+              - TEXT: "Contact"
+                URL: "/contact"
+              - TEXT: "External Link"
+                URL: "https://example.com"
+                EXTERNAL: true
+          STYLES:
+              WIDTH: "200px"
+              BACKGROUND_COLOR: "#FFFFFF"
+              PADDING: "20px"
+              BOX_SHADOW: "2px 2px 5px rgba(0, 0, 0, 0.2)"
+              POSITION: "fixed"
+              TOP: "60px"
+              LEFT: "-200px"
+              HEIGHT: "calc(100% - 60px)"
+              TRANSITION: "left 0.3s ease"
+              OVERFLOW: "auto"
+              BORDER_RADIUS: "0 5px 5px 0"
+
+        - TYPE: "toggle"
+          TARGET: "sidebar"
+          ICON: "☰"
+          STYLES:
+              POSITION: "fixed"
+              TOP: "20px"
+              LEFT: "20px"
+              FONT_SIZE: "24px"
+              CURSOR: "pointer"
+              Z_INDEX: "999"
+              BACKGROUND_COLOR: "#336699"
+              PADDING: "10px"
+              BORDER_RADIUS: "5px"
+              COLOR: "#FFFFFF"
+              BOX_SHADOW: "2px 2px 5px rgba(0, 0, 0, 0.2)"
+              TRANSITION: "background-color 0.3s ease"
+
+        - TYPE: "section"
+          TITLE: "« Introduction »"
+          CONTENT: "Welcome to Advanced HG Language. This language empowers developers to create sophisticated applications with ease."
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              PADDING: "20px"
+              MARGIN: "20px"
+              BORDER_RADIUS: "5px"
+
+        - TYPE: "section"
+          TITLE: "« Features »"
+          CONTENT: "Explore our amazing features below:"
+          CHILDREN:
+              - TYPE: "list"
+                ITEMS:
+                    - "Feature 1"
+                    - "Feature 2"
+                    - "Feature 3"
+                STYLES:
+                    MARGIN: "10px"
+                    PADDING: "10px"
+                    LIST_STYLE_TYPE: "none"
+                    BACKGROUND_COLOR: "#FFFFFF"
+                    BORDER_RADIUS: "5px"
+                    BOX_SHADOW: "0 0 5px rgba(0, 0, 0, 0.1)"
+
+        - TYPE: "article"
+          TITLE: "« Feature 1 »"
+          CONTENT: |
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          BUTTON: "Learn More"
+          CODE:
+              LANGUAGE: "JavaScript"
+              CONTENT: |
+                  function handleClick() {
+                      alert("Button clicked!");
+                  }
+
+          CONDITION: true
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              PADDING: "20px"
+              MARGIN: "20px"
+              BORDER_RADIUS: "5px"
+              BOX_SHADOW: "0 0 5px rgba(0, 0, 0, 0.1)"
+
+        - TYPE: "footer"
+          CONTENT: "« © 2025 Advanced HG Language. All rights reserved. »"
+          LINKS:
+              - TEXT: "« Privacy Policy »"
+                URL: "#"
+              - TEXT: "« Terms of Service »"
+                URL: "#"
+          STYLES:
+              FONT_SIZE: "14px"
+              TEXT_ALIGN: "center"
+              BACKGROUND_COLOR: "#336699"
+              COLOR: "#FFFFFF"
+              PADDING: "20px"
+              BORDER_RADIUS: "0 0 5px 5px"
+
+        - TYPE: "progressbar"
+          VALUE: "50%"
+          STYLES:
+              WIDTH: "80%"
+              HEIGHT: "20px"
+              BACKGROUND_COLOR: "#f1f1f1"
+              BORDER_RADIUS: "5px"
+              MARGIN: "20px auto"
+              OVERFLOW: "hidden"
+
+        - TYPE: "button"
+          TEXT: "« Click Me »"
+          URL: "#"
+          STYLES:
+              BACKGROUND_COLOR: "#336699"
+              COLOR: "#FFFFFF"
+              PADDING: "10px 20px"
+              BORDER_RADIUS: "5px"
+              BORDER: "none"
+              CURSOR: "pointer"
+              TEXT_TRANSFORM: "uppercase"
+              FONT_WEIGHT: "bold"
+              MARGIN: "20px"
+
+        - TYPE: "template"
+          NAME: "« Custom Template »"
+          CONTENT: |
+              <div class="custom-template">
+                  <h3>Title</h3>
+                  <p>Description</p>
+              </div>
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              PADDING: "20px"
+              BORDER_RADIUS: "5px"
+              BOX_SHADOW: "0 0 5px rgba(0, 0, 0, 0.1)"
+              MARGIN: "20px"
+
+        - TYPE: "textbox"
+          PLACEHOLDER: "Enter your text here..."
+          STYLES:
+              WIDTH: "80%"
+              PADDING: "10px"
+              MARGIN: "20px auto"
+              BORDER: "1px solid #ccc"
+              BORDER_RADIUS: "5px"
