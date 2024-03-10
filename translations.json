@@ -1,0 +1,22 @@
+{
+  "es": {
+    "welcome_message": "¡Bienvenido a HG Language Avanzado!",
+    "about_message": "Acerca de nosotros",
+    "contact_message": "Contáctenos"
+  },
+  "fr": {
+    "welcome_message": "Bienvenue dans le langage HG avancé!",
+    "about_message": "À propos de nous",
+    "contact_message": "Contactez-nous"
+  },
+  "en": {
+    "welcome_message": "Welcome to Advanced HG Language!",
+    "about_message": "About Us",
+    "contact_message": "Contact Us"
+  },
+  "ar": {
+    "welcome_message": "مرحبًا بك في لغة HG المتقدمة!",
+    "about_message": "معلومات عنا",
+    "contact_message": "اتصل بنا"
+  }
+}
