@@ -1,5 +1,9 @@
 # HG Language Documentation
+تفضل، إليك شارة جميلة مستوحاة من الصورة التي قدمتها:
 
+![HG Language](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij0L7LEfcMB1ZP_dtEJkJJZDQPJ0eAQWqRM-suD15MagL-Um8BpTqPDs4IhrFvp3il1jRYGb1Ezom6JWyEv_6SQHCCTQhAn46jKgjl1MnibgMiaSh190CDXtBQuU5gLfbbmJ_Ajuaw6s-S59icdE5lwbL_FlhT4vZ-uUjtsbLD-mT_IEM6TF7rvwqxN_1C/s1825/Picsart_24-03-09_20-27-20-806.png)
+
+يمكنك استخدام هذه الشارة في توثيق اللغة HG لتضيف لمسة جمالية واحترافية إلى المشروع.
 ## Introduction
 HG (Hyper Markup Language) is a versatile markup language designed for creating structured and dynamic content. This comprehensive documentation provides an in-depth overview of the syntax, elements, and advanced features of the HG language, along with examples and best practices.
 
