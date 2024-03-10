@@ -3,6 +3,8 @@
 
 [![HG Language](https://img.shields.io/badge/Language-HG-brightgreen)](https://github.com/yourusername/your-repository)
 [![Version](https://img.shields.io/badge/Version-1.0-blue)](https://github.com/yourusername/your-repository/releases)
+[![Build Status](https://img.shields.io/travis/yourusername/your-repository/master.svg?style=flat-square)](https://travis-ci.org/yourusername/your-repository)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 HG (Hyper Markup Language) is a versatile markup language designed for creating structured and dynamic content. This repository contains the documentation and tools for working with the HG language.
 
@@ -34,7 +36,7 @@ npm install hg-language
 
 To use HG in your projects, you can include the HG library in your HTML file:
 
-```hg
+```html
 <script src="hg.min.js"></script>
 ```
 
@@ -48,6 +50,38 @@ Then, you can start writing HG code within your HTML:
 ]
 ```
 
+## Advanced Usage
+
+### Custom Elements
+
+You can define custom elements in HG for specialized functionality. For example:
+
+```hg
+[CustomElement: Attribute="Value"]
+```
+
+### Conditional Rendering
+
+Conditional statements can be used to render content based on specific conditions:
+
+```hg
+[IF: Condition]
+    [Text: This content will be displayed if the condition is true.]
+[ELSE]
+    [Text: This content will be displayed if the condition is false.]
+[ENDIF]
+```
+
+### Scripting
+
+HG supports integration with JavaScript for dynamic content generation and interaction:
+
+```hg
+[SCRIPT:
+    // JavaScript code here
+]
+```
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request.
@@ -56,4 +90,5 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, fee
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
- 
+
+يمكنك استخدام الشارات المزخرفة لتجميل وتنظيم توثيق اللغة HG، وتجعله أكثر احترافية وجاذبية للمطورين والمستخدمين.
