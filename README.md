@@ -1,72 +1,59 @@
+ 
+# HG Language
 
+[![HG Language](https://img.shields.io/badge/Language-HG-brightgreen)](https://github.com/yourusername/your-repository)
+[![Version](https://img.shields.io/badge/Version-1.0-blue)](https://github.com/yourusername/your-repository/releases)
 
-# لغة HG (HyperGraphics Language)
+HG (Hyper Markup Language) is a versatile markup language designed for creating structured and dynamic content. This repository contains the documentation and tools for working with the HG language.
 
-## مقدمة:
-لغة HG هي لغة ترميز بسيطة وقوية تستخدم لإنشاء محتوى جرافيكي متنوع وديناميكي. تهدف HG إلى توفير أدوات مرنة ومبتكرة لإنشاء رسومات وتخطيطات مختلفة بطريقة بسيطة وفعالة.
+## Features
 
-## الجداول:
-يتيح عنصر الجدول في لغة HG إنشاء جداول منظمة بيانات ومعلومات بتصميمات مختلفة. يمكن تعريف الجداول باستخدام النمط التالي:
+- **Simple Syntax**: HG syntax is easy to learn and use, using square brackets to define elements.
+- **Versatile Elements**: HG supports various elements like text, images, lists, tables, buttons, and more.
+- **Advanced Styling**: Customizable styling using CSS-like attributes for enhanced visual presentation.
+- **Dynamic Content**: Integration with JavaScript for creating interactive and dynamic elements.
+- **Extensible**: Easily extendable with additional features and functionalities.
 
-```
-[Table]
-| رأس 1 | رأس 2 | رأس 3 |
-|-------|-------|-------|
-| قيمة 1 | قيمة 2 | قيمة 3 |
-| قيمة 4 | قيمة 5 | قيمة 6 |
-```
+## Getting Started
 
-## الألوان:
-تتيح لغة HG تحديد الألوان بشكل سهل ومباشر باستخدام أسماء الألوان أو قيم HEX. على سبيل المثال:
+To get started with HG, you can refer to the following resources:
 
-```
-[Color: Red]
-```
+- [Documentation](documentation.md): Comprehensive documentation on the HG language syntax, elements, and usage.
+- [Examples](examples/): Example HG files demonstrating different use cases and scenarios.
+- [Editor](https://hg-editor.com): Online editor for writing and previewing HG code.
 
-## النصوص:
-يمكن عرض النصوص بسهولة باستخدام عنصر النص في لغة HG:
+## Installation
 
-```
-[Text: هذا نص بسيط]
-```
+You can install the HG package using npm:
 
-## الصور:
-يمكن إدراج الصور في الوثائق باستخدام عنصر الصورة:
-
-```
-[Image: image_link]
+```bash
+npm install hg-language
 ```
 
-## الرسوم:
-لإضافة رسومات بسيطة، يمكن استخدام عنصر الرسم في لغة HG:
+## Usage
 
-```
-[Shape: Circle, Color: Blue, Radius: 50]
-```
+To use HG in your projects, you can include the HG library in your HTML file:
 
-## الرسائل:
-يمكن عرض الرسائل أو الاقتباسات باستخدام عنصر الرسالة:
-
-```
-[Quote: "هذا اقتباس مهم"]
+```hg
+<script src="hg.min.js"></script>
 ```
 
-## الروابط:
-يمكن إضافة روابط للوثيقة باستخدام عنصر الرابط:
+Then, you can start writing HG code within your HTML:
 
-```
-[Link: انقر هنا](URL)
-```
-
-## الأزرار:
-يمكن إنشاء أزرار قابلة للنقر باستخدام عنصر الزر:
-
-```
-[Button: انقر هنا](URL)
+```hg
+[BODY:
+    [Title: Hello World]
+    [Text: Welcome to HG Language]
+    [Image: example.jpg]
+]
 ```
 
-## الختام:
-توفر لغة HG وسيلة سهلة وفعالة لإنشاء محتوى جرافيكي متنوع بمختلف التصميمات والعناصر. يمكن توسيع وتخصيص هذه اللغة لتلبية احتياجات العديد من التطبيقات والمشاريع المختلفة بسهولة وسرعة.
----
+## Contributing
 
-هذا تعريف مبسط للغة HG، يمكن توسيعه وتعديله لتضمين المزيد من الميزات والعناصر حسب الحاجة.
+Contributions are welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+ 
