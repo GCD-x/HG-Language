@@ -1,4 +1,4 @@
-![HG Language]( logo.png)
+![HG Language]( logo.jpg)
 
 [![HG Language](https://img.shields.io/badge/Language-HG-brightgreen)](https://github.com/yourusername/your-repository)
 [![Version](https://img.shields.io/badge/Version-1.0-blue)](https://github.com/yourusername/your-repository/releases)
