@@ -1,0 +1,93 @@
+[HOME HG]
+[BODY:
+    [HEADER:
+        [TEXT: Welcome to HG Language]
+        [DESIGNS:
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            color: #333;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #ccc;
+        ]
+    ]
+    [SECTION:
+        [TEXT: Explore our amazing features:]
+        [DESIGNS:
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        ]
+        [LIST]
+            - [LINK: Feature 1](#)
+            - [LINK: Feature 2](#)
+            - [LINK: Feature 3](#)
+        [/LIST]
+    ]
+    [ARTICLE:
+        [TITLE: Feature 1]
+        [CONTENT: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]
+        [BUTTON: Learn More](#)
+        [VIDEO: video_url.mp4]
+        [DESIGNS:
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        ]
+    ]
+    [ARTICLE:
+        [TITLE: Feature 2]
+        [CONTENT: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]
+        [BUTTON: Learn More](#)
+        [GALLERY:
+            [IMAGE: image1.jpg]
+            [IMAGE: image2.jpg]
+            [IMAGE: image3.jpg]
+        ]
+        [DESIGNS:
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        ]
+    ]
+    [ARTICLE:
+        [TITLE: Feature 3]
+        [CONTENT: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.]
+        [BUTTON: Learn More](#)
+        [MAP: location]
+        [DESIGNS:
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        ]
+    ]
+    [FOOTER:
+        [TEXT: © 2025 HG Language. All rights reserved.]
+        [LINK: Privacy Policy](#)
+        [LINK: Terms of Service](#)
+        [DESIGNS:
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        ]
+    ]
+    [SCRIPT:
+        // Add custom JavaScript code here
+        function handleClick() {
+            alert("Button clicked!");
+        }
+    ]
+]
+
