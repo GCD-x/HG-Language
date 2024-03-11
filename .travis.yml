@@ -1,17 +1,19 @@
-language: generic
+ language: hg
+hg:
+  - "apm1.0.0"
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y apm=1.0.0
+install:
+  - hg install -r apmshap.hg
 
 script:
-  - apm --version
-  - apm install
-  - apm build
-  - apm test
+  - hg Main.hg
 
-after_success:
-  - for file in $(find . -type f -name "*.hg"); do
-      hg activate $file;
-    done
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: "*.hg"
+  skip_cleanup: true
+  on:
+    tags: true
     
