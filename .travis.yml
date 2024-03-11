@@ -1,4 +1,11 @@
-language: HG
-rvm:
- - amp1.0.0
- - jruby
+language: generic
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y apm=1.0.0
+
+script:
+  - apm --version
+  - apm install
+  - apm build
+  - apm test
