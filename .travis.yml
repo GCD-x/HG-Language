@@ -1,0 +1,19 @@
+ language: hg
+hg:
+  - "apm1.0.0"
+
+install:
+  - hg install -r apmshap.hg
+
+script:
+  - hg Main.hg
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: "*.hg"
+  skip_cleanup: true
+  on:
+    tags: true
+    
