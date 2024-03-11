@@ -1,0 +1,216 @@
+!HG:
+    Prepare:
+        CUSTOM_STYLE:
+            FONT_FAMILY: "Roboto, Arial, sans-serif"
+            FONT_SIZE: "16px"
+            FONT_COLOR: "#333333"
+            BACKGROUND_COLOR: "#F9F9F9"
+            BORDER_COLOR: "#CCCCCC"
+            BORDER_RADIUS: "8px"
+            BOX_SHADOW: "0 0 10px rgba(0, 0, 0, 0.1)"
+            TEXT_ALIGN: "left"
+
+    COMPONENTS:
+        - TYPE: "head"
+          CONTENT: |
+              [title]HG Documentation[/title]
+              [meta charset="UTF-8"]
+              [meta name="viewport" content="width=device-width, initial-scale=1.0"]
+          STYLES:
+              BACKGROUND_COLOR: "#4CAF50"
+              COLOR: "#FFFFFF"
+              PADDING: "12px"
+              TEXT_ALIGN: "center"
+              POSITION: "fixed"
+              TOP: "0"
+              LEFT: "0"
+              WIDTH: "100%"
+              Z_INDEX: "999"
+
+        - TYPE: "bady"
+          CONTENT: |
+              [h1]Welcome to the HG Documentation[/h1]
+              [p]Here you can find all the information you need to get started with HG programming language.[/p]
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              COLOR: "#333333"
+              PADDING: "20px"
+              MARGIN_TOP: "40px"
+              TEXT_ALIGN: "center"
+              BORDER_TOP: "1px solid #CCCCCC"
+
+        - TYPE: "sidebar"
+          TITLE: "Menu"
+          ITEMS:
+              - TEXT: "Home"
+                ICON: "home.png"
+                URL: "/"
+              - TEXT: "About"
+                ICON: "about.png"
+                URL: "/about"
+              - TEXT: "Contact"
+                ICON: "contact.png"
+                URL: "/contact"
+          STYLES:
+              BACKGROUND_COLOR: "#333333"
+              COLOR: "#FFFFFF"
+              PADDING: "20px"
+              POSITION: "fixed"
+              TOP: "40px"
+              LEFT: "0"
+              WIDTH: "200px"
+              HEIGHT: "calc(100% - 40px)"
+              Z_INDEX: "998"
+
+        - TYPE: "searchbar"
+          PLACEHOLDER: "Search..."
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              COLOR: "#333333"
+              BORDER_RADIUS: "5px"
+              PADDING: "10px"
+              MARGIN: "20px"
+              BORDER: "1px solid #CCCCCC"
+
+        - TYPE: "highlightbar"
+          CONTENT: "Featured Articles"
+          STYLES:
+              BACKGROUND_COLOR: "#FF9800"
+              COLOR: "#FFFFFF"
+              PADDING: "10px"
+              MARGIN: "20px"
+              BORDER_RADIUS: "5px"
+              TEXT_ALIGN: "center"
+
+        - TYPE: "loadingbar"
+          STYLES:
+              BACKGROUND_COLOR: "#4CAF50"
+              HEIGHT: "5px"
+              WIDTH: "100%"
+
+        - TYPE: "time"
+          FORMAT: "24h"
+          STYLES:
+              FONT_SIZE: "20px"
+              FONT_WEIGHT: "bold"
+              MARGIN: "20px"
+
+        - TYPE: "calculator"
+          BUTTONS:
+              - TEXT: "7"
+              - TEXT: "8"
+              - TEXT: "9"
+              - TEXT: "+"
+              - TEXT: "4"
+              - TEXT: "5"
+              - TEXT: "6"
+              - TEXT: "-"
+              - TEXT: "1"
+              - TEXT: "2"
+              - TEXT: "3"
+              - TEXT: "×"
+              - TEXT: "0"
+              - TEXT: "."
+              - TEXT: "="
+              - TEXT: "÷"
+          STYLES:
+              BACKGROUND_COLOR: "#FFFFFF"
+              BORDER: "1px solid #CCCCCC"
+              BORDER_RADIUS: "5px"
+              PADDING: "20px"
+              MARGIN: "20px"
+              DISPLAY: "grid"
+              GRID_TEMPLATE_COLUMNS: "repeat(4, 1fr)"
+              GRID_GAP: "10px"
+
+        - TYPE: "concept"
+          TITLE: "LANGUAGE_CREATION"
+          DESCRIPTION: |
+              The LANGUAGE_CREATION concept allows developers to create their own programming language using HG. This feature is particularly useful for researchers, educators, or anyone interested in language design.
+              With LANGUAGE_CREATION, developers can define the syntax, semantics, and features of their language, and even implement it as a compiler or interpreter within HG itself.
+          EXAMPLE:
+              - NAME: "MyLang"
+                DESCRIPTION: |
+                    A simple example of creating a new programming language called MyLang.
+                    MyLang is a dynamically typed language with support for first-class functions and closures.
+                CODE: |
+                    LANGUAGE_CREATION:
+                        - NAME: "MyLang"
+                          DESCRIPTION: "A new programming language created using HG"
+                          FEATURES:
+                              - "Dynamic typing"
+                              - "Functional programming support"
+                              - "Built-in concurrency"
+                              - "Easy syntax"
+                              - "Extensible"
+                          SYNTAX:
+                              - "Variable declaration: var x = 10;"
+                              - "Function declaration: func add(a, b) { return a + b; }"
+                              - "Control flow: if (condition) { /* code */ } else { /* code */ }"
+                          EXAMPLES:
+                              - TITLE: "Hello World"
+                                CODE: |
+                                    func main() {
+                                        println("Hello, world!");
+                                    }
+                              - TITLE: "Factorial"
+                                CODE: |
+                                    func factorial(n) {
+                                        if (n <= 1) {
+                                            return 1;
+                                        } else {
+                                            return n * factorial(n - 1);
+                                        }
+                                    }
+                                    func main() {
+                                        println(factorial(5));
+                                    }
+                              - TITLE: "Fibonacci"
+                                CODE: |
+                                    func fibonacci(n) {
+                                        if (n <= 1) {
+                                            return n;
+                                        } else {
+                                            return fibonacci(n - 1) + fibonacci(n - 2);
+                                        }
+                                    }
+                                    func main() {
+                                        for (var i = 0; i < 10; i++) {
+                                            println(fibonacci(i));
+                                        }
+                                    }
+    PAGES:
+        - URL: "/"
+          CONTENT:
+              - TITLE: "Welcome"
+                BODY: "Welcome to the HG documentation. Here you can find all the information you need to get started with HG programming language."
+
+        - URL: "/about"
+          CONTENT:
+              - TITLE: "About"
+                BODY: "The HG programming language is designed to be simple, yet powerful. It provides developers with the tools they need to build advanced applications."
+
+        - URL: "/contact"
+          CONTENT:
+              - TITLE: "Contact Us"
+                BODY: "If you have any questions or feedback, feel free to contact us at info@hglang.com."
+
+    TRANSLATIONS:
+        - LANGUAGE: "JavaScript"
+          CODE: |
+              // This is a sample JavaScript translation
+              function greet() {
+                  return "Hello, world!";
+              }
+
+        - LANGUAGE: "Python"
+          CODE: |
+              # This is a sample Python translation
+              def greet():
+                  return "Hello, world!"
+
+    INTERACTIONS:
+        - EVENT: "click"
+          TARGET: "button1"
+          ACTION: "alert('Button clicked!')"
+          DESCRIPTION: "Show alert when button is clicked"
