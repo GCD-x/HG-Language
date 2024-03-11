@@ -1,0 +1,4 @@
+language: HG
+rvm:
+ - amp1.0.0
+ - jruby
