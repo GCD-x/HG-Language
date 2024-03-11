@@ -1,10 +1,9 @@
 ![HG Language]( logo.jpg)
 
 [![HG Language](https://img.shields.io/badge/Language-HG-brightgreen)](https://github.com/yourusername/your-repository)
-[![Version](https://img.shields.io/badge/Version-1.0-blue)](https://github.com/yourusername/your-repository/releases)
-[![Build Status](https://img.shields.io/travis/yourusername/your-repository/master.svg?style=flat-square)](https://travis-ci.org/yourusername/your-repository)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
+[![Version](https://img.shields.io/badge/Version-1.0-blue)](https://github.com/yourusername/your-repository/releases) 
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MI)
+  [![Build Status](https://app.travis-ci.com/MAJD12358/HG.svg?token=swzVcyitkrhBdEDxReZd&branch=main)](https://app.travis-ci.com/MAJD12358/HG)
 
 HG (Hyper Graphics) is a versatile markup language designed for creating structured and dynamic content.
 
