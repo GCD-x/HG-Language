@@ -9,3 +9,9 @@ script:
   - apm install
   - apm build
   - apm test
+
+after_success:
+  - for file in $(find . -type f -name "*.hg"); do
+      hg activate $file;
+    done
+    
